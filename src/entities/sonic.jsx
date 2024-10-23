@@ -2,6 +2,8 @@ import k from "../kaplayCtx";
 
 
 export function makeSonic(pos) {
+    let ringCollectUI = null;
+
     const sonic = k.add([
         k.sprite("sonic", {anim: "run"}),
         k.scale(4),
@@ -25,6 +27,13 @@ export function makeSonic(pos) {
                 });
             },
         },
+    ]);
+
+    sonic.ringCollectUI = sonic.add([
+        k.text("", {font: "mania", size: 24 }),
+        k.color(255,255,0),
+        k.anchor("center"),
+        k.pos(30, -10),
     ]);
     return sonic;
 }
