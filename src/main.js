@@ -2,7 +2,6 @@ import k from "./kaplayCtx";
 import mainMenu from "./scenes/mainMenu";
 import gameover from "./scenes/gameover";
 import game from "./scenes/game";
-import './index.css'
 
 k.loadSprite("chemical-bg", "graphics/chemical-bg.png");
 k.loadSprite("platforms", "graphics/platforms.png");
